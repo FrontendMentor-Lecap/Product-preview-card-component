@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+
+  :root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream:  hsl(30, 38%, 92%);
+    --vdark-blue: hsl(212, 21%, 14%);
+    --dark-grey:  hsl(228, 12%, 48%);
+  }
+
+  body {
+    background-color: var(--cream);
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    background-color: white;
+    margin: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.image img {
+    min-width: 100%;
+    min-height: 100;
+}
+
+.text {
+    padding: 5%;
+    color: var(--dark-grey);
+}
+.text .perfume {
+    text-transform: uppercase;
+    
+    letter-spacing: 0.5rem;
+    font-size: 0.8em;
+}
+
+  h1 {
+    font-family:  'Fraunces', serif;
+    font-size: 2.5rem;
+    margin: 5% 0;
+    line-height: 1;
+    color: var(--vdark-blue);
+  }
+
+  .text p:nth-of-type(2){
+    line-height: 1.6;
+    margin-right: 3%;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .price h3 {
+    color: var(--dark-cyan);
+    font-size: 2em;
+    font-family: 'Fraunces', serif;
+    padding-right: 0.5em;
+  }
+  .price p {
+    text-decoration: line-through;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    display: flex;
+    width:100%;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    background-color: var(--dark-cyan);
+  }
+
+  .button :hover {
+    background-color: var(--vdark-blue);
+  }
+
+  button img {
+    margin-right: 1rem;
+  }
+
+  .attribution {
+display: flex;
+justify-content: center;
+font-size: 0.8rem;
+position: absolute;
+left:0;
+right: 0;
+bottom: 2%;
+  }
+
+  .attribution a {
+    font-size: 0.8rem;
+    padding-left: 0.3em;
+  }
+
+
+  @media (min-width: 700px) {
+    
+    .card {
+      display: flex;
+      max-width: 600px;
+    }
+
+    .image {
+      height: 100%;
+      width: 50%;
+    }
+
+    .image img {
+      content:url(images/image-product-desktop.jpg);
+    }
+
+    .text {
+      width: 50%;
+    }
+
+    h1 {
+      margin: 10% 0;
+    }
+
+    .price {
+      margin: 10% 0;
+    }
+  }
