@@ -70,7 +70,7 @@
     margin: 1rem 0;
   }
 
-  .price h3 {
+  .price h2{
     color: var(--dark-cyan);
     font-size: 2em;
     font-family: 'Fraunces', serif;
