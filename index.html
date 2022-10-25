@@ -24,7 +24,12 @@
   <body>
     <main class="card">
       <div class="image">
-        <img src="images/image-product-mobile.jpg" alt="" class="product" />
+        <picture
+          ><source
+            media="(max-width:700px)"
+            srcset="./images/image-product-mobile.jpg" />
+          <img src="./images/image-product-desktop.jpg" alt="Gabrielle Parfum"
+        /></picture>
       </div>
       <div class="text">
         <p class="perfume">Perfume</p>

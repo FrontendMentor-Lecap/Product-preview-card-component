@@ -29,16 +29,9 @@
     overflow: hidden;
   }
 
-  .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.image img {
-    min-width: 100%;
-    min-height: 100;
-}
+  picture img{
+    width: 100%;
+  }
 
 .text {
     padding: 5%;
@@ -133,9 +126,6 @@ bottom: 2%;
       width: 50%;
     }
 
-    .image img {
-      content:url(images/image-product-desktop.jpg);
-    }
 
     .text {
       width: 50%;
